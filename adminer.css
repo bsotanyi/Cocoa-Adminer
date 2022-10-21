@@ -250,6 +250,9 @@ input[type=radio] {
   border-radius: 9rem;
 }
 
+.js .checkable .checked td, .js .checkable .checked th {
+  background-color: #2d221a !important;
+}
 .js .column {
   background: #1d1611;
   outline: 1px solid #eeb25f;

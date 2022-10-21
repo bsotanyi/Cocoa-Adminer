@@ -94,6 +94,7 @@ th, td, fieldset, .table, .error, .message {
     border: 1px solid adjust-color($color: $dark, $lightness: 10%) !important;
     cursor: default;
 }
+
 .table {
     .char { color: $secondary; }
     .date { color: #ace63f; }
@@ -223,9 +224,14 @@ input[type="checkbox"]:checked::before {
 input[type="radio"] {
     border-radius: 9rem;
 }
-.js .column {
-    background: $dark;
-    outline: 1px solid $primary;
+.js {
+    .checkable .checked td, .checkable .checked th {
+        background-color: adjust-color($color: $dark, $lightness: 5%) !important;
+    }
+    .column {
+        background: $dark;
+        outline: 1px solid $primary;
+    }
 }
 #help {
     background-color: $dark;
