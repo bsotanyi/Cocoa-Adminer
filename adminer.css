@@ -254,3 +254,8 @@ input[type=radio] {
   background: #1d1611;
   outline: 1px solid #eeb25f;
 }
+
+#help {
+  background-color: #1d1611;
+  border: 1px solid #eeb25f;
+}
