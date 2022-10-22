@@ -134,6 +134,14 @@ select, input:not(.icon):not([type=checkbox]):not([type=radio]), textarea, pre[c
   border-radius: 2px;
 }
 
+select, input:not(.icon):not([type=checkbox]):not([type=radio]) {
+  height: 2em;
+}
+
+select {
+  vertical-align: middle;
+}
+
 input.icon {
   background-color: #1d1611;
   border-radius: 2px;
@@ -192,8 +200,8 @@ code {
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
 }
 
 ::-webkit-scrollbar-button {
@@ -242,10 +250,14 @@ input[type=checkbox]:disabled, input[type=radio]:disabled {
   opacity: 0.5;
 }
 
+input[type=checkbox]:checked {
+  background-color: #eeb25f;
+}
 input[type=checkbox]:checked::before {
   width: 0.65em;
   height: 0.65em;
   transform-origin: bottom left;
+  background-color: #1d1611;
   clip-path: polygon(39% 65%, 76% 10%, 95% 24%, 46% 97%, 5% 67%, 18% 49%);
 }
 
@@ -264,4 +276,5 @@ input[type=radio] {
 #help {
   background-color: #1d1611;
   border: 1px solid #eeb25f;
+  border-radius: 2px;
 }
