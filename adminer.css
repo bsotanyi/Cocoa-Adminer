@@ -183,6 +183,11 @@ code {
   color: #b9e63f;
 }
 
+#menu .message {
+  border: none !important;
+  background: inherit !important;
+}
+
 .footer {
   border: none;
   background-color: #1d1611;
